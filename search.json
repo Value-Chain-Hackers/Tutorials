@@ -40,13 +40,83 @@
     ]
   },
   {
+    "objectID": "redefine.html",
+    "href": "redefine.html",
+    "title": "4  Refining Agent Behavior: Making Them Smarter",
+    "section": "",
+    "text": "Adjusting parameters for more effective performance\n\nTeaching your agent new tricks: Customization\nTroubleshooting common agent issues\nUsing feedback loops to improve agent responses",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refining Agent Behavior: Making Them Smarter</span>"
+    ]
+  },
+  {
+    "objectID": "testing.html",
+    "href": "testing.html",
+    "title": "5  Testing Agents: Trial and Error for Perfection",
+    "section": "",
+    "text": "Setting up test cases for logistics scenarios\n\nRunning in-game simulations with NPC bots\nGathering feedback: How to observe agent behavior\nTweaking based on test results: Iterative improvements",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
+    ]
+  },
+  {
+    "objectID": "collaboration.html",
+    "href": "collaboration.html",
+    "title": "6  Testing Agents: Trial and Error for Perfection",
+    "section": "",
+    "text": "Setting up test cases for logistics scenarios\nRunning in-game simulations with NPC bots\nGathering feedback: How to observe agent behavior\nTweaking based on test results: Iterative improvements",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
+    ]
+  },
+  {
+    "objectID": "intergration.html",
+    "href": "intergration.html",
+    "title": "7  Integrating OpenWebUI into Your Workflow",
+    "section": "",
+    "text": "Embedding agents into serious games\nApplying OpenWebUI to supply chain and logistics research\nWorkflow automation: Using bots to handle repetitive tasks\nReal-world use cases: From theory to practice",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Integrating OpenWebUI into Your Workflow</span>"
+    ]
+  },
+  {
+    "objectID": "examples.html",
+    "href": "examples.html",
+    "title": "8  Real-World Examples and Case Studies",
+    "section": "",
+    "text": "Optimizing game dialogues with NPC agents\n\nUsing agents to simulate supply chain disruptions\nLogistics route optimization: Step-by-step case study\nApplying OpenWebUI in academic research",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Real-World Examples and Case Studies</span>"
+    ]
+  },
+  {
+    "objectID": "scaling.html",
+    "href": "scaling.html",
+    "title": "9  Scaling and Maintenance: Keeping Your Agents Up-to-Date",
+    "section": "",
+    "text": "Scaling agents for larger projects\n\nMonitoring agent performance over time\nRegular updates and maintenance for optimal performance\nHow to retire outdated agents",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Scaling and Maintenance: Keeping Your Agents Up-to-Date</span>"
+    ]
+  },
+  {
+    "objectID": "finalthoughts.html",
+    "href": "finalthoughts.html",
+    "title": "10  Final Thoughts and Future Potential",
+    "section": "",
+    "text": "The evolving role of AI in logistics and game development\n\nExpanding beyond the basics: What’s next for you?\nHow to stay updated on new OpenWebUI features\nEncouragement to keep experimenting and learning",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Final Thoughts and Future Potential</span>"
+    ]
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "4  Summary",
+    "title": "11  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
