@@ -22,11 +22,11 @@
   {
     "objectID": "interface.html",
     "href": "interface.html",
-    "title": "2  Interface",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
     "section": "",
-    "text": "This is test\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Left Panel: Workspace Hub\n\nRight Panel: Control Station\nCenter Panel: Interaction Space\nNavigating the Interface\nTips for getting comfortable with the layout",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Interface</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
     ]
   },
   {
@@ -34,7 +34,7 @@
     "href": "agents.html",
     "title": "3  Crafting Your First Agent: Getting Started with Bots",
     "section": "",
-    "text": "This is test\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Creating a new agent: Step-by-step\n\nNaming your agent: Keep it descriptive\nAssigning roles: Logistics vs. Game development applications\nBasic agent instructions: Starting simple\nA walkthrough for a first-time agent",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Crafting Your First Agent: Getting Started with Bots</span>"
     ]
