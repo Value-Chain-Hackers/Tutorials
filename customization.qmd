@@ -3,3 +3,91 @@
    - Developing your own templates for complex tasks
    - API integration: Extending OpenWebUI’s functionality
    - Scripting dynamic workflows
+
+   # Advanced Customization for Developers
+
+For developers looking to fully harness the power of OpenWebUI, advanced customization options offer significant flexibility. These include adjusting advanced parameters, developing custom templates for complex tasks, integrating APIs to extend functionality, and scripting dynamic workflows. This guide breaks down these features, empowering you to build and control highly sophisticated agents.
+
+---
+
+## Advanced Parameters: Digging Deeper into Agent Control
+
+OpenWebUI offers **advanced parameters** that allow developers to fine-tune the behavior of agents. These parameters include values like **temperature**, **top-k**, **top-p**, and other controls that affect the randomness, creativity, and structure of agent responses. Here's how to dive deeper into these settings:
+
+### Step-by-Step:
+1. **Access the Workbench**: Open the **Workbench Tool** from the left panel and select the agent you want to modify.
+2. **Navigate to Advanced Parameters**: In the agent settings, expand the **Advanced Parameters** section. This will reveal a variety of fields that allow you to control how the agent behaves.
+   - **Temperature**: Lower values make the agent's responses more deterministic, while higher values introduce variability.
+   - **Top-K** and **Top-P**: These settings control how wide or narrow the agent’s “vocabulary” is for each response, with Top-P acting as a probabilistic filter.
+   - **Max Tokens**: Sets a cap on the length of responses, ideal for creating agents that need to be concise or provide detailed answers.
+   
+### Developer Tip:
+If you’re designing agents for logistics or research, keeping parameters like **temperature** lower ensures the agent sticks to predictable, reliable responses. In creative tasks, like NPC dialogues in games, higher settings lead to more varied, dynamic conversations.
+
+---
+
+## Developing Your Own Templates for Complex Tasks
+
+Developing custom templates in OpenWebUI allows you to scale complex workflows and re-use agent structures for similar tasks.
+
+### Step-by-Step:
+1. **Create a New Template**:
+   - Go to the **Workbench** and select the option to create a new agent. Instead of starting from scratch, consider saving a template for reuse.
+   - **Define System Prompts**: In the template, set default system prompts that guide the agent's actions across tasks. These can be broad or specific, depending on the use case.
+
+2. **Modify Advanced Parameters**:
+   - Adjust parameters based on the complexity of the task. For example, if you're creating a template for managing logistics workflows, set stricter token limits and lower temperature values to ensure deterministic behavior.
+
+3. **Save as Template**:
+   - Once the agent's configuration is set, save it as a template. This makes it easy to apply the same structure to new tasks or agents in future projects.
+
+### Developer Tip:
+Custom templates are particularly useful in cases like **supply chain optimization**, where agents need to respond to changing variables but still maintain a consistent decision-making framework. Once you’ve fine-tuned the parameters, saving these as templates allows for quick re-deployment across multiple use cases.
+
+---
+
+## API Integration: Extending OpenWebUI’s Functionality
+
+For more advanced use cases, you can extend OpenWebUI’s functionality through **API integration**. This allows agents to pull data from external sources in real-time, such as traffic data for logistics, or dynamic user inputs in serious games.
+
+### Step-by-Step:
+1. **Prepare the API**:
+   - Identify the external service your agent will need to access, such as a traffic API for real-time data or a CRM system for customer service automation.
+   - Ensure the API is set up and has clear documentation, including authentication keys and endpoints.
+
+2. **Integrate with OpenWebUI**:
+   - In the **Tools Workspace**, add the API integration by providing the necessary keys and endpoints.
+   - Configure the agent to call the API in real-time by including the proper instructions in the **System Prompt**. For example, you can instruct the agent to use traffic data from the API when calculating optimized routes.
+
+3. **Test and Monitor**:
+   - Once the integration is set up, test the API calls by triggering agent interactions that rely on external data.
+   - Monitor the performance to ensure that the agent is accessing and utilizing the API correctly.
+
+### Developer Tip:
+API integrations are essential for real-world applications where agents need to make decisions based on current data. For instance, in logistics, integrating real-time traffic APIs ensures that delivery routes are always optimized according to the latest conditions.
+
+---
+
+## Scripting Dynamic Workflows
+
+To fully automate workflows, developers can script dynamic interactions between multiple agents, allowing them to collaborate on tasks or react to external triggers.
+
+### Step-by-Step:
+1. **Design the Workflow**:
+   - Identify the tasks that need to be handled by different agents. For example, in a logistics environment, one agent might manage inventory while another handles route optimization.
+   - Use OpenWebUI’s scripting capabilities to define how these agents interact. You can script workflows where one agent triggers another, such as re-routing deliveries based on real-time inventory shortages.
+
+2. **Set up Triggers**:
+   - Define triggers that prompt the agents to act. For example, you can script a workflow where an agent monitors inventory levels and automatically triggers the logistics agent to recalculate routes when certain conditions are met.
+   
+3. **Test Dynamic Interaction**:
+   - Run simulations to ensure the scripted workflow operates as expected. Test scenarios where agents collaborate dynamically and adjust their behavior based on external conditions.
+
+### Developer Tip:
+Scripting dynamic workflows is especially valuable in complex environments like supply chain management. Automating the interaction between multiple agents can streamline processes such as inventory management, route optimization, and real-time customer communication.
+
+---
+
+## Conclusion
+
+By mastering advanced parameters, developing custom templates, integrating APIs, and scripting dynamic workflows, developers can take full control of OpenWebUI’s powerful capabilities. These tools allow for the automation of complex tasks, real-time decision-making, and the creation of highly customized, intelligent agents that streamline workflows and improve operational efficiency.

@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./collaboration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Testing Agents: Trial and Error for Perfection</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Creating Teams of Agents that Work Together</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -237,23 +237,27 @@ ul.task-list li input[type="checkbox"] {
 <p>The <strong>Workspace</strong> in OpenWebUI is designed to provide a structured environment for interacting with AI models, managing content, and customizing workflows. It is composed of five main tabs, each catering to different functionalities:</p>
 <section id="models" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="models"><span class="header-section-number">3.1</span> 1. Models</h2>
-<p>The <strong>Models</strong> tab is where you can create, modify, and manage AI models. It supports: - Model creation, editing, and fine-tuning - Integration with external APIs (Ollama, OpenAI) - Attaching documents and tools to models - Model tagging, cloning, and sharing - Adjustable model parameters (e.g., temperature, seed)</p>
+<p>The <strong>Models</strong> tab is where you can create, modify, and manage AI models.</p>
+<p>You can create, edit, and fine-tune models, including those from external sources like Ollama or OpenAI. It supports functionalities like tagging, cloning, sharing, and exporting model files. You can also attach tools and documents to enhance the model’s capabilities, allowing integration with Retrieval Augmented Generation (RAG) for document-based queries​</p>
+<p>It supports: - Model creation, editing, and fine-tuning - Integration with external APIs (Ollama, OpenAI) - Attaching documents and tools to models - Model tagging, cloning, and sharing - Adjustable model parameters (e.g., temperature, seed)</p>
 </section>
 <section id="prompts" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="prompts"><span class="header-section-number">3.2</span> 2. Prompts</h2>
-<p>The <strong>Prompts</strong> tab allows for the management and customization of predefined prompts, making interactions with models more efficient. This includes: - Creating and storing prompt presets - Utilizing dynamic variables in prompts (e.g., date, user name) - Setting up system prompts for specific interactions</p>
+<p>The <strong>Prompts</strong> tab allows for the management and customization of predefined prompts, making interactions with models more efficient. You can set custom system prompts or load prompt presets, making it easy to engage the model in a structured way. This tab may also support prompt variables like {{CURRENT_DATE}}, making interactions dynamic This includes: - Creating and storing prompt presets - Utilizing dynamic variables in prompts (e.g., date, user name) - Setting up system prompts for specific interactions</p>
 </section>
 <section id="documents" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="documents"><span class="header-section-number">3.3</span> 3. Documents</h2>
-<p>The <strong>Documents</strong> tab is primarily used for integrating knowledge sources with models. You can: - Upload documents for reference in conversations - Use document-based queries via the RAG (Retrieval Augmented Generation) feature - Organize and manage document sources for quick access</p>
+<p>The <strong>Documents</strong> tab is primarily used for integrating knowledge sources with models. The Documents tab integrates with RAG, enabling models to use document content for more informed responses. You can upload and organize documents that the model references during conversations, improving the quality of interactions based on specific content You can: - Upload documents for reference in conversations - Use document-based queries via the RAG (Retrieval Augmented Generation) feature - Organize and manage document sources for quick access</p>
 </section>
 <section id="tools" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="tools"><span class="header-section-number">3.4</span> 4. Tools</h2>
-<p>The <strong>Tools</strong> tab provides access to various extensions and utilities that enhance the model’s capabilities. This includes: - Image generation, text processing, or code execution tools - Custom-built or third-party tools that can be integrated with your model workflows</p>
+<p>The <strong>Tools</strong> tab provides access to various extensions and utilities that enhance the model’s capabilities. The Tools tab allows you to assign various tools to your models. These tools can range from image generation engines to custom Python code, depending on the task. For example, a Python code editor could be integrated here to extend the model’s functionality with custom code execution.</p>
+<p>This includes: - Image generation, text processing, or code execution tools - Custom-built or third-party tools that can be integrated with your model workflows</p>
 </section>
 <section id="functions" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="functions"><span class="header-section-number">3.5</span> 5. Functions</h2>
-<p>The <strong>Functions</strong> tab allows you to define specific pipelines and actions that models can perform. It is useful for: - Creating custom workflows using functions like filters or pipelines - Setting up configurations for model actions based on user interactions</p>
+<p>The <strong>Functions</strong> tab allows you to define specific pipelines and actions that models can perform. Functions allow you to define specific actions or pipelines for the models. This can include things like filters, pipes, and even custom user-defined functions to control the flow of data through the model. Functions like valves can be used to manage configuration options or user controls dynamically​.</p>
+<p>It is useful for: - Creating custom workflows using functions like filters or pipelines - Setting up configurations for model actions based on user interactions</p>
 <hr>
 </section>
 <section id="next-steps" class="level2" data-number="3.6">
@@ -283,6 +287,7 @@ ul.task-list li input[type="checkbox"] {
 <li>After selecting the model, it will load into your workspace, ready for use.</li>
 </ul></li>
 </ol>
+<p>llama3.2:1b llama3.2:3b llama3.1:8b llama3.1:70b llama3.1:405b gemma2:2b gemma2:9b gemma2:27b qwen2.5:0.5b qwen2.5:1.5b qwen2.5:3b qwen2.5:7b qwen2.5:14b qwen2.5:32b qwen2.5:72b phi3.5:3.8b nemotron-mini mistral-small:22b deepseek-coder-v2:16b deepseek-coder-v2:236b command-r:35b codegemma</p>
 </section>
 <section id="examples" class="level4" data-number="4.0.1.2">
 <h4 data-number="4.0.1.2" class="anchored" data-anchor-id="examples"><span class="header-section-number">4.0.1.2</span> Examples:</h4>

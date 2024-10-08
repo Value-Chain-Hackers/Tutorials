@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./collaboration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Testing Agents: Trial and Error for Perfection</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Creating Teams of Agents that Work Together</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,8 +189,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#step-1-define-clear-test-scenarios" id="toc-step-1-define-clear-test-scenarios" class="nav-link active" data-scroll-target="#step-1-define-clear-test-scenarios"><span class="header-section-number">5.1</span> Step 1: Define Clear Test Scenarios</a></li>
+  <li><a href="#step-2-run-live-interactions" id="toc-step-2-run-live-interactions" class="nav-link" data-scroll-target="#step-2-run-live-interactions"><span class="header-section-number">5.2</span> Step 2: Run Live Interactions</a></li>
+  <li><a href="#step-3-adjust-and-rerun-tests" id="toc-step-3-adjust-and-rerun-tests" class="nav-link" data-scroll-target="#step-3-adjust-and-rerun-tests"><span class="header-section-number">5.3</span> Step 3: Adjust and Rerun Tests</a></li>
+  <li><a href="#step-4-simulate-edge-cases" id="toc-step-4-simulate-edge-cases" class="nav-link" data-scroll-target="#step-4-simulate-edge-cases"><span class="header-section-number">5.4</span> Step 4: Simulate Edge Cases</a></li>
+  <li><a href="#step-5-gather-feedback-and-iterate" id="toc-step-5-gather-feedback-and-iterate" class="nav-link" data-scroll-target="#step-5-gather-feedback-and-iterate"><span class="header-section-number">5.5</span> Step 5: Gather Feedback and Iterate</a></li>
+  <li><a href="#step-6-monitor-long-term-performance" id="toc-step-6-monitor-long-term-performance" class="nav-link" data-scroll-target="#step-6-monitor-long-term-performance"><span class="header-section-number">5.6</span> Step 6: Monitor Long-Term Performance</a>
+  <ul class="collapse">
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts"><span class="header-section-number">5.6.1</span> Final Thoughts</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -222,8 +236,79 @@ ul.task-list li input[type="checkbox"] {
 <li>Tweaking based on test results: Iterative improvements</li>
 </ul></li>
 </ul>
+<p>After you’ve configured and refined your agent in OpenWebUI, it’s time to put it to the test. Testing is an essential part of ensuring that your agent behaves as expected and delivers the desired results. This is where you identify areas of improvement and fine-tune its performance. It’s all about iteration—using trial and error to perfect your agent’s behavior over time.</p>
+<section id="step-1-define-clear-test-scenarios" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="step-1-define-clear-test-scenarios"><span class="header-section-number">5.1</span> Step 1: Define Clear Test Scenarios</h2>
+<p>Before diving into testing, it’s crucial to define what scenarios you want your agent to handle. These should reflect real-world use cases where the agent will be deployed. Define different conditions and interactions that your agent might face during its operation.</p>
+<ul>
+<li><strong>Logistics Agent Example</strong>: If your agent is managing delivery routes, you could test how it handles sudden traffic delays or requests for optimizing multiple delivery points at once.</li>
+<li><strong>Game NPC Example</strong>: If you’re working with an NPC agent, define scenarios like how it reacts when a player takes aggressive actions or asks certain questions.</li>
+</ul>
+<p>By outlining your scenarios first, you have a structured approach to evaluate the agent’s behavior.</p>
+<hr>
+</section>
+<section id="step-2-run-live-interactions" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="step-2-run-live-interactions"><span class="header-section-number">5.2</span> Step 2: Run Live Interactions</h2>
+<p>Once your test scenarios are ready, it’s time to start running <strong>live interactions</strong> with your agent. These real-time interactions will show how well your agent responds to commands and conditions based on the system prompts, rules, and parameters you’ve configured.</p>
+<ol type="1">
+<li>Open the <strong>center panel</strong> in OpenWebUI to begin interacting with your agent.</li>
+<li>Issue a command or input relevant to your test scenario. For example:
+<ul>
+<li><code>"Optimize the fastest route considering a 20-minute traffic delay on Route A."</code></li>
+<li><code>"Respond to the player’s hostile question with a defensive answer."</code></li>
+</ul></li>
+<li>Watch how your agent processes the input and generates a response. Pay close attention to how closely the response aligns with your expectations.</li>
+</ol>
+<p><strong>Pro Tip</strong>: Record the agent’s responses for each scenario. This will help you track its behavior across multiple test sessions.</p>
+<hr>
+</section>
+<section id="step-3-adjust-and-rerun-tests" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="step-3-adjust-and-rerun-tests"><span class="header-section-number">5.3</span> Step 3: Adjust and Rerun Tests</h2>
+<p>It’s unlikely that your agent will perform perfectly on the first try. This is where trial and error come into play. Based on the agent’s performance, you’ll need to revisit its configuration and make tweaks to improve its behavior.</p>
+<ul>
+<li><strong>Refine System Prompts</strong>: If the agent’s response is off-track, consider revising the system prompt to give clearer or more focused instructions.</li>
+<li><strong>Modify Parameters</strong>: Adjust parameters like <strong>temperature</strong>, <strong>Top K</strong>, and <strong>frequency penalty</strong> to fine-tune the agent’s creativity, response consistency, and overall behavior.</li>
+</ul>
+<p>After making adjustments, run the tests again to see how the agent’s behavior has improved. Repeat this process as often as necessary to get closer to the desired result.</p>
+<hr>
+</section>
+<section id="step-4-simulate-edge-cases" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="step-4-simulate-edge-cases"><span class="header-section-number">5.4</span> Step 4: Simulate Edge Cases</h2>
+<p>Beyond standard test scenarios, it’s important to simulate edge cases—situations that might be rare but still possible in the real-world use of your agent. These cases will test the limits of the agent’s adaptability.</p>
+<ul>
+<li><strong>Logistics Edge Case</strong>: Test how the agent responds to a sudden closure of all major routes, forcing it to find a highly unconventional route.</li>
+<li><strong>NPC Edge Case</strong>: Simulate an extreme or unusual player interaction, like repeated aggressive behavior or a complex multi-step question.</li>
+</ul>
+<p>By running these more complex or unexpected tests, you’ll uncover potential weaknesses in your agent’s logic or adaptability.</p>
+<hr>
+</section>
+<section id="step-5-gather-feedback-and-iterate" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="step-5-gather-feedback-and-iterate"><span class="header-section-number">5.5</span> Step 5: Gather Feedback and Iterate</h2>
+<p>Testing doesn’t end with a single round of adjustments. Use feedback loops from your testing sessions to continually improve your agent. If you’re testing in a collaborative environment, gather feedback from colleagues or users to get different perspectives on the agent’s performance.</p>
+<ul>
+<li><strong>Feedback Questions</strong>:
+<ul>
+<li>Was the agent’s response clear and aligned with the task?</li>
+<li>Did the agent handle unexpected scenarios gracefully?</li>
+<li>Were the responses consistent and reliable, or too random?</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="step-6-monitor-long-term-performance" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="step-6-monitor-long-term-performance"><span class="header-section-number">5.6</span> Step 6: Monitor Long-Term Performance</h2>
+<p>Finally, once your agent is deployed in a live setting, it’s important to monitor its long-term performance. This includes checking how well the agent handles real-world data and conditions over extended periods.</p>
+<ul>
+<li><strong>Automated Testing</strong>: Consider setting up automated test cases that run at regular intervals to ensure that your agent continues to perform optimally. These tests can track changes in external conditions (such as updates in the logistics network or game dynamics) and help you proactively address any issues.</li>
+</ul>
+<hr>
+<section id="final-thoughts" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="final-thoughts"><span class="header-section-number">5.6.1</span> Final Thoughts</h3>
+<p>Testing your agent is not a one-time task but a continuous process of refinement. By using structured testing methods, adjusting settings through trial and error, and monitoring performance over time, you can create a smarter, more responsive agent. The key to perfection is iteration—fine-tuning the agent until it performs consistently and intelligently in real-world scenarios.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -653,8 +738,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./collaboration.html" class="pagination-link" aria-label="Testing Agents: Trial and Error for Perfection">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Testing Agents: Trial and Error for Perfection</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./collaboration.html" class="pagination-link" aria-label="Creating Teams of Agents that Work Together">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Creating Teams of Agents that Work Together</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
