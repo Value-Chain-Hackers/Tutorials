@@ -24,7 +24,87 @@
     "href": "interface.html",
     "title": "2  The Interface: Your Dashboard of Possibilities",
     "section": "",
-    "text": "Upon launching OpenWebUI, you are greeted by a user-friendly dashboard that lets you create and manage agents for various tasks, whether it’s for logistics or game development. Let’s walk through how to navigate this interface step by step, and I’ll show you how to create a simple agent for a logistics task as we go along.\n\n2.0.1 The Left Panel: Your Workspace and Navigation Hub\nThe left panel is where you can manage all ongoing and past interactions with your agents. You’ll see options for: - Active agent sessions: These are the agents currently working on tasks or in active conversations with you. - Archived conversations: Here you can find a list of previous conversations or interactions you’ve had with your agents. - Agent templates: These pre-built configurations allow you to quickly create agents without starting from scratch.\n\n2.0.1.1 Example: Navigating the Left Panel\n\nOn the left panel, click on “Active Sessions”. This will display a list of currently running agents and their statuses.\nClick on “Archived Conversations” if you want to review past interactions with an agent. This is useful for identifying where the agent might need tweaks or improvements.\nExplore the “Agent Templates” section by clicking on it. This provides you with pre-built agents for common tasks like “Logistics Optimizer” or “NPC Interaction”. For this example, we’ll start by selecting the “Logistics Optimizer” template to create an agent.\n\nTry It Out: Click on “Logistics Optimizer” from the templates list and watch as it loads a pre-configured agent ready for route optimization tasks.\n\n\n\n\n2.0.2 The Right Panel: Detailed Agent Controls\nThis is the control center for all agent creation and behavior adjustments. The right panel provides options to: - Create a new agent: You can start from scratch or use a template. - Configure agent roles: Assign roles to agents and customize their behavior based on your needs. - Behavior Adjustments: Fine-tune agent responses and set triggers to make their interactions more dynamic.\n\n2.0.2.1 Example: Creating and Configuring an Agent\nLet’s create a simple agent to optimize delivery routes for a logistics company.\n\nCreate New Agent:\n\nClick on the “Create New Agent” button located at the top of the right panel.\nName the agent as UrbanRouteOptimizer_1. This will handle deliveries in urban areas.\nSelect “Logistics Optimizer” as the agent template. This template already includes basic settings for route optimization.\n\nAgent Role Configuration:\n\nScroll down to the “Roles” section.\nIn the dropdown, choose the “Route Planner” role.\nSet its primary task to “Optimize Delivery Routes”.\n\nBehavior Adjustments:\n\nUnder the “Behavior” section, click on “Add New Rule”.\nCreate a rule that reroutes deliveries if traffic is delayed by more than 20 minutes:\n\nRule Name: TrafficDelayAdjustment\nTrigger: If traffic delay exceeds 20 minutes.\nAction: Recalculate optimal delivery route.\n\nSave the rule by clicking “Apply” at the bottom of the panel.\n\n\nTry It Out: After setting up your agent, click “Run” at the top of the panel. Watch how the agent responds by generating optimized routes in real time. Simulate a traffic delay to see the agent adjust its route planning.\n\n\n\n\n2.0.3 The Center: The Command Line of Interaction\nThe center panel is where you can communicate with your agents in real time. It displays: - Live interactions: You can issue commands and receive immediate feedback from your agent. - Task Overview: Monitor the agent’s progress on tasks, such as logistics route optimization or NPC dialogue management.\n\n2.0.3.1 Example: Testing Agent Responses\nOnce your agent is running, it’s time to interact with it:\n\nIn the center panel, click on the input field at the bottom and type:\n\"Optimize all delivery routes for the next 24 hours\"\nPress Enter. The agent will calculate the best possible routes based on current traffic data and package priority.\nNow, let’s test how it handles a disruption. Type:\n\"Simulate a 30-minute traffic delay on Route A\"\nWatch as the agent recalculates the delivery routes in response to the delay, prioritizing alternate routes to minimize downtime.\n\nTry It Out: After the agent generates new routes, use the input field to ask for a summary:\n\"Summarize changes made to the delivery routes\"\n\n\n\n\n2.0.4 Pro Insights\nUnderstanding the interface is one thing, but mastering it means knowing how to optimize your agents through iterative testing. For example, if your logistics agent is consistently choosing longer routes, adjust the behavior rules in the right panel to prioritize efficiency over package delivery speed. Then, immediately test the effect of your changes by issuing new commands in the center panel.\nPro Tip: Make small adjustments to your agent’s behavior, then use the center panel to simulate real-world scenarios (e.g., bad weather or road closures). This way, you can see how the agent adapts and continuously improve its performance.",
+    "text": "3 The Interface: Your Dashboard of Possibilities\nWhen you launch OpenWebUI, the interface is designed to give you full control over the interaction between your agents and their tasks. The layout consists of three main panels: the left panel for managing active sessions and templates, the center panel for live agent interaction, and the right panel for adjusting chat controls and system parameters.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
+    ]
+  },
+  {
+    "objectID": "interface.html#system-prompt",
+    "href": "interface.html#system-prompt",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
+    "section": "3.1 System Prompt",
+    "text": "3.1 System Prompt\nThe System Prompt is the initial instruction or context that guides the agent’s overall behavior. It sets the tone for the agent’s interactions and is one of the most critical settings.\n\nExample: \"You are a logistics optimization agent. Your goal is to minimize delivery time by adjusting routes based on real-time traffic data.\"\nEffect: This ensures the agent’s responses stay focused on optimizing routes. Changing the system prompt to include more detailed instructions, such as considering fuel efficiency or avoiding toll roads, will shift the agent’s decision-making process.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
+    ]
+  },
+  {
+    "objectID": "interface.html#temperature",
+    "href": "interface.html#temperature",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
+    "section": "3.2 Temperature",
+    "text": "3.2 Temperature\nTemperature controls the randomness or creativity of the agent’s responses. It affects how likely the agent is to deviate from predictable answers.\n\nRange: 0.0 to 1.0\n\nA lower value (closer to 0.0) makes the agent more deterministic, meaning it will choose the most predictable and straightforward responses.\nA higher value (closer to 1.0) increases the variability in responses, allowing the agent to explore less obvious possibilities.\n\nExample:\n\nAt 0.2, the agent will give highly predictable and consistent answers. Ideal for tasks like logistics optimization where precision is key.\nAt 0.8, the agent will provide more creative, varied responses, useful when testing dynamic NPC dialogue in games or brainstorming creative solutions.\n\n\nEffect: Higher temperatures introduce more randomness. For a logistics agent, using a high temperature could lead to more unconventional route suggestions, which might not always be optimal. Lowering the temperature ensures the agent sticks to tried-and-tested routes.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
+    ]
+  },
+  {
+    "objectID": "interface.html#top-k",
+    "href": "interface.html#top-k",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
+    "section": "3.3 Top K",
+    "text": "3.3 Top K\nTop K limits how many options the agent considers at each step of its response generation. It controls how wide the agent’s “vocabulary” is during interactions.\n\nRange: 1 to infinity (higher values mean more possible words to choose from)\n\nA lower value (e.g., 10) restricts the agent to a smaller, more focused set of choices.\nA higher value (e.g., 50) allows the agent to consider a broader range of possible next words or actions.\n\nExample:\n\nSet Top K to 10 for a logistics agent. This ensures the agent sticks to the most reliable, often-used routes.\nSet Top K to 100 for an NPC in a game to allow for more varied dialogue options, creating a more dynamic conversation.\n\n\nEffect: Lower Top K values make the agent more predictable by narrowing its choices. In logistics, a low Top K ensures the agent only considers the most efficient routes. Higher Top K values allow the agent to explore more creative options, useful in contexts where variety is desirable.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
+    ]
+  },
+  {
+    "objectID": "interface.html#top-p",
+    "href": "interface.html#top-p",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
+    "section": "3.4 Top P",
+    "text": "3.4 Top P\nTop P (nucleus sampling) controls how the agent selects from the top P% of most likely responses. This method can reduce reliance on overly common responses.\n\nRange: 0.0 to 1.0\n\nA lower value (e.g., 0.1) means the agent will only select from the top 10% of the most likely responses.\nA higher value (e.g., 0.9) allows the agent to consider a much broader range of responses.\n\nExample:\n\nTop P of 0.1 forces the agent to choose the safest, most common responses. Great for logistics where efficiency and reliability are key.\nTop P of 0.8 allows for more variability, letting the agent experiment with routes or responses outside the norm.\n\n\nEffect: Lower Top P values restrict the agent to the safest options, which works well for practical applications like logistics. In creative tasks, like generating dialogue for NPCs, a higher Top P value might produce more interesting and varied results.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
+    ]
+  },
+  {
+    "objectID": "interface.html#frequency-penalty",
+    "href": "interface.html#frequency-penalty",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
+    "section": "3.5 Frequency Penalty",
+    "text": "3.5 Frequency Penalty\nFrequency Penalty controls how much the agent penalizes words or phrases that it has already used. This prevents repetitive responses and encourages more varied output.\n\nRange: 0.0 to 2.0\n\nA higher value (e.g., 1.5) makes the agent less likely to repeat words, encouraging it to find new ways of responding.\nA lower value (e.g., 0.2) allows the agent to repeat words more freely.\n\nExample:\n\nSet Frequency Penalty to 1.2 for an NPC agent to avoid repetitive dialogue in-game conversations.\nSet Frequency Penalty to 0.5 for a logistics agent, so it can repeat key terms like route names or instructions if necessary for clarity.\n\n\nEffect: A higher penalty is useful in creative tasks to avoid repetitive answers, like generating dynamic NPC dialogue. In logistics or similar applications, setting a lower penalty ensures that important details (like road names) are repeated when necessary.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
+    ]
+  },
+  {
+    "objectID": "interface.html#max-tokens",
+    "href": "interface.html#max-tokens",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
+    "section": "3.6 Max Tokens",
+    "text": "3.6 Max Tokens\nMax Tokens limits how long the agent’s responses can be by setting a cap on the number of tokens (which typically represent words or parts of words).\n\nRange: Any positive integer\n\nA lower value (e.g., 50) ensures the agent’s responses are short and concise.\nA higher value (e.g., 200) allows for more detailed and elaborate responses.\n\nExample:\n\nSet Max Tokens to 100 for logistics tasks to ensure the agent provides concise but detailed route recommendations.\nSet Max Tokens to 150 for NPC agents in games to allow for more detailed explanations or conversations.\n\n\nEffect: A lower Max Tokens value ensures responses remain short and focused, useful for tasks where brevity is important, like logistics. Higher values allow for longer, more elaborate explanations, great for creative writing or character dialogue.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
+    ]
+  },
+  {
+    "objectID": "interface.html#mirostat-eta-and-tau",
+    "href": "interface.html#mirostat-eta-and-tau",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
+    "section": "3.7 Mirostat (Eta and Tau)",
+    "text": "3.7 Mirostat (Eta and Tau)\nMirostat is an advanced control mechanism that adjusts creativity in real-time as the agent generates text.\n\nEta: Controls how aggressive the adjustment is.\n\nHigher values mean more aggressive changes in creativity.\n\nTau: The target perplexity, or how unpredictable the agent should be.\nExample:\n\nSet Mirostat Eta to 1.0 and Mirostat Tau to 5 for a logistics agent to keep its responses stable and predictable.\nIncrease Tau for an NPC agent in a game to make dialogue more varied and unpredictable.\n\n\nEffect: Mirostat helps fine-tune the unpredictability in long conversations. In logistics, using a low Tau ensures the agent stays consistent over longer interactions, while a higher Tau in a game allows for more dynamic and evolving conversations.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
+    ]
+  },
+  {
+    "objectID": "interface.html#use-of-advanced-parameters-in-specific-scenarios",
+    "href": "interface.html#use-of-advanced-parameters-in-specific-scenarios",
+    "title": "2  The Interface: Your Dashboard of Possibilities",
+    "section": "3.8 Use of Advanced Parameters in Specific Scenarios",
+    "text": "3.8 Use of Advanced Parameters in Specific Scenarios\n\n3.8.1 Logistics Use Case:\n\nSystem Prompt: \"Optimize delivery routes with minimal delays, considering traffic and package urgency.\"\nTemperature: Set to 0.4 for stable and predictable results.\nTop K: Set to 20 to limit route options to the most common choices.\nMax Tokens: Set to 100 to keep the responses concise.\n\n\n\n3.8.2 Game NPC Use Case:\n\nSystem Prompt: \"You are a game character. Respond to player questions with wit and humor.\"\nTemperature: Set to 0.8 for more creative and spontaneous replies.\nFrequency Penalty: Increase to 1.5 to avoid repetition in dialogue.\nMax Tokens: Set to 150 for more in-depth interactions.\n\n\n3.8.2.1 Example: Fine-Tuning a Logistics Agent\nLet’s say you have an agent designed to optimize delivery routes, and you want to adjust how it prioritizes efficiency.\n\nSystem Prompt: In the System Prompt field, type:\n\n\"Prioritize optimizing delivery routes based on shortest time while considering real-time traffic delays.\"\n\nTemperature: Set the Temperature to 0.5. This will make the agent’s responses balanced—not too random but still adaptable to complex routing decisions.\nTop K & Top P: Set Top K to 50 and Top P to 0.9 to allow the agent to consider a wide range of potential routes while still being focused on the most likely options.\nMax Tokens: Set Max Tokens to 150 to keep the responses concise but still detailed enough for logistics decisions.\nFrequency Penalty: Increase the Frequency Penalty to 0.6 to ensure the agent avoids repeating similar route suggestions over and over.\n\n\n\n\n\n3.8.3 The Center: Interacting with Agents in Real-Time\nThe center panel is where you have direct conversations with your agents. This panel is where the agent’s responses appear, and you can issue new commands or monitor task progress.\n\n3.8.3.1 Example: Running Your Configured Agent\nAfter adjusting the settings on the right panel, it’s time to see the results in the center panel.\n\nIn the center panel, type:\n\"Optimize delivery routes for trucks in the downtown area, considering current traffic conditions.\"\nPress Enter and observe the agent’s response, which should consider your new system prompt and settings.\nSimulate a traffic delay by typing:\n\"There is a traffic jam on Main Street. Recalculate delivery routes.\"\nThe agent will adjust the routes in real-time, providing alternative suggestions based on the adjusted parameters like Temperature and Top K.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Interface: Your Dashboard of Possibilities</span>"
     ]
