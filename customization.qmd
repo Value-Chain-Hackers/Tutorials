@@ -1,0 +1,5 @@
+# Advanced Customization for Developers
+ - Advanced parameters: Digging deeper into agent control
+   - Developing your own templates for complex tasks
+   - API integration: Extending OpenWebUI’s functionality
+   - Scripting dynamic workflows

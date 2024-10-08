@@ -1,0 +1,5 @@
+# Testing Agents: Trial and Error for Perfection
+- Setting up test cases for logistics scenarios
+   - Running in-game simulations with NPC bots
+   - Gathering feedback: How to observe agent behavior
+   - Tweaking based on test results: Iterative improvements

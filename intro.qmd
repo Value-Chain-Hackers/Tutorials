@@ -1,0 +1,28 @@
+# Introduction
+
+Welcome to the world of OpenWebUI, where creativity meets efficiency! Whether you're a **Serious Game Developer** or a **Logistics Researcher**, OpenWebUI is your new secret weapon. It allows you to build smart agents that automate complex tasks, freeing you to focus on innovation and strategy.
+
+But this isn’t just about creating bots. It’s about crafting intelligent assistants that help streamline your workflow, optimize processes, and reduce the repetitive, mundane tasks that often bog us down. Imagine a team of digital helpers at your disposal, handling everything from resource management in your games to route optimization in logistics.
+
+### Who Is This Book For?
+
+This book is designed for **Serious Game Developers** and **Logistics and Supply Chain Researchers**—fields that demand innovative, flexible solutions. Whether you're designing interactive NPCs for your latest game or testing complex logistics scenarios, OpenWebUI offers a set of tools to make your job easier and more efficient.
+
+Here’s what you’ll learn:
+
+- How to **set up and configure your agents**.
+- How to **create custom workflows** for both game development and logistics.
+- How to **test and refine your agents** to make them more responsive and capable.
+- How to **integrate OpenWebUI** into your daily processes for seamless automation.
+
+### Why OpenWebUI?
+
+OpenWebUI is a modular, flexible platform that grows with your needs. Whether you’re working on a small game prototype or managing a massive supply chain, this tool adapts to your projects. The best part? You don’t need to be a coding expert to get started. OpenWebUI makes it easy for you to spend less time wrestling with the tech and more time doing what matters most: creating, optimizing, and innovating.
+
+**Reminder**: This book focuses solely on usage. You won’t find long installation guides here—we assume you’re ready to dive straight into the good stuff!
+
+Let’s get started. By the end of this book, you’ll have the skills to build agents that work for you, leaving you more time for creativity and strategic thinking. Ready? Let’s dive in!
+
+
+
+See @knuth84 for additional discussion of literate programming.

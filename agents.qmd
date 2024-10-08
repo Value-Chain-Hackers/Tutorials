@@ -1,0 +1,209 @@
+# Crafting Your First Agent: Getting Started with Bots
+
+The **Workspace** in OpenWebUI is designed to provide a structured environment for interacting with AI models, managing content, and customizing workflows. It is composed of five main tabs, each catering to different functionalities:
+
+## 1. Models
+The **Models** tab is where you can create, modify, and manage AI models. 
+
+You can create, edit, and fine-tune models, including those from external sources like Ollama or OpenAI. 
+It supports functionalities like tagging, cloning, sharing, and exporting model files. 
+You can also attach tools and documents to enhance the model's capabilities, allowing integration with Retrieval Augmented Generation (RAG) for document-based queries​
+
+It supports:
+- Model creation, editing, and fine-tuning
+- Integration with external APIs (Ollama, OpenAI)
+- Attaching documents and tools to models
+- Model tagging, cloning, and sharing
+- Adjustable model parameters (e.g., temperature, seed)
+
+## 2. Prompts
+The **Prompts** tab allows for the management and customization of predefined prompts, making interactions with models more efficient. 
+You can set custom system prompts or load prompt presets, making it easy to engage the model in a structured way.
+ This tab may also support prompt variables like {{CURRENT_DATE}}, making interactions dynamic
+This includes:
+- Creating and storing prompt presets
+- Utilizing dynamic variables in prompts (e.g., date, user name)
+- Setting up system prompts for specific interactions
+
+## 3. Documents
+The **Documents** tab is primarily used for integrating knowledge sources with models. 
+The Documents tab integrates with RAG, enabling models to use document content for more informed responses. 
+You can upload and organize documents that the model references during conversations, improving the quality of interactions based on specific content
+You can:
+- Upload documents for reference in conversations
+- Use document-based queries via the RAG (Retrieval Augmented Generation) feature
+- Organize and manage document sources for quick access
+
+## 4. Tools
+The **Tools** tab provides access to various extensions and utilities that enhance the model's capabilities. 
+The Tools tab allows you to assign various tools to your models. 
+These tools can range from image generation engines to custom Python code, depending on the task. 
+For example, a Python code editor could be integrated here to extend the model’s functionality with custom code execution.
+
+This includes:
+- Image generation, text processing, or code execution tools
+- Custom-built or third-party tools that can be integrated with your model workflows
+
+## 5. Functions
+The **Functions** tab allows you to define specific pipelines and actions that models can perform. 
+Functions allow you to define specific actions or pipelines for the models. 
+This can include things like filters, pipes, and even custom user-defined functions to control the flow of data through the model. 
+Functions like valves can be used to manage configuration options or user controls dynamically​.
+
+It is useful for:
+- Creating custom workflows using functions like filters or pipelines
+- Setting up configurations for model actions based on user interactions
+
+---
+
+## Next Steps:
+Let's now break down each section, starting with **Models**, to explore how this tab functions in more depth.
+
+# Step-by-Step Guide: Using the Models Tab in OpenWebUI
+
+The **Models** tab in the Workspace provides a structured environment for managing AI models, with exclusive integration to models from the [Ollama Library](https://ollama.com/library). This guide will walk you through the process step by step, explaining how each feature works, along with examples to help you follow along.
+
+---
+
+### a. **Model Creation and Selection**
+
+#### Step-by-Step:
+
+1. **Open the Models Tab**: 
+   - In the Workspace, you’ll find a tab labeled **Models**. Click on it to begin managing your AI models.
+   
+
+2. **Choose a Model from the Ollama Library**: 
+   - Once inside, you will see a list of pre-trained models from the Ollama Library. Each model has been optimized for specific tasks such as language understanding, decision-making, and data analysis.
+   - **Click** on the model you want to use. For a logistics-related project, choose a model that can handle data well. For a game development project, select a model that can generate dynamic conversations or behaviors.
+
+3. **Loading the Model**:
+   - After selecting the model, it will load into your workspace, ready for use.
+
+llama3.2:1b
+llama3.2:3b
+llama3.1:8b
+llama3.1:70b
+llama3.1:405b
+gemma2:2b
+gemma2:9b
+gemma2:27b
+qwen2.5:0.5b
+qwen2.5:1.5b
+qwen2.5:3b
+qwen2.5:7b
+qwen2.5:14b
+qwen2.5:32b
+qwen2.5:72b
+phi3.5:3.8b
+nemotron-mini
+mistral-small:22b
+deepseek-coder-v2:16b
+deepseek-coder-v2:236b
+command-r:35b
+codegemma
+
+#### Examples:
+
+- **Logistics Example**: If you’re optimizing delivery routes or analyzing supply chain data, you might select a model like `Llama 2`, which is excellent at handling structured data and making predictions based on historical delivery times.
+  
+- **Game Development Example**: When developing an NPC for a role-playing game, you might choose a conversational model from the Ollama Library that can dynamically respond to player choices, simulating realistic conversations in the game.
+
+---
+
+### b. **Model Fine-Tuning**
+
+#### Step-by-Step:
+
+1. **Adjust Model Settings**: 
+   - Once your model is loaded, you can fine-tune its performance by adjusting key parameters.
+   
+2. **Parameters to Adjust**:
+   - **Temperature**: This setting controls how creative or random the model’s responses are. 
+     - Set the temperature **lower (0.2-0.3)** for more predictable and precise responses (e.g., for logistics tasks).
+     - Set the temperature **higher (0.7-0.9)** for more creative, dynamic answers (e.g., for game characters' dialogues).
+   
+   - **Context Length**: This defines how much prior information the model remembers when generating responses. In scenarios where the model needs to handle ongoing conversations or long-term data, increase this value.
+   
+   - **Frequency Penalty**: This adjusts how often words are repeated in the model’s responses. A high frequency penalty ensures concise outputs, useful for reports and logistics.
+
+#### Examples:
+
+- **Logistics Example**: If you are predicting how delivery times vary with weather, you might set the **Context Length** higher to ensure the model remembers recent weather data and adjusts its predictions accordingly.
+  
+- **Game Development Example**: By adjusting the **Temperature**, you can make NPC dialogues more unpredictable, making the interactions feel more immersive for players. A higher temperature will make NPCs respond in a variety of ways, while a lower temperature will keep conversations focused and repetitive.
+
+---
+
+### c. **Model Attachments (Documents and Tools)**
+
+#### Step-by-Step:
+
+1. **Attach Documents**: 
+   - You can upload documents like route maps, inventory data, or game scripts that the model will reference when generating responses.
+   
+2. **Attach Tools**:
+   - Attach external tools, such as a Python script or an image generation tool, that enhance the model’s functionality. For instance, if your model is processing large amounts of data, you might integrate a script that automates part of the process.
+
+#### Examples:
+
+- **Logistics Example**: If you’re managing global supply chains, you could upload historical weather data, shipment schedules, and other logistical information. The model can then reference this data and predict how changes (e.g., fuel prices or weather conditions) will affect delivery times.
+  
+- **Game Development Example**: You can upload a storyline document with character backstories to the model. When players interact with NPCs, the model can use this document to provide responses that are consistent with the game’s narrative, ensuring the characters remain true to their roles.
+
+---
+
+### d. **Model Cloning and Tagging**
+
+#### Step-by-Step:
+
+1. **Cloning a Model**: 
+   - If you want to experiment with different configurations, you can clone a model. Cloning keeps the original model intact while creating a copy that you can modify. This is useful when testing out new settings or attaching different tools.
+   
+2. **Tagging Models**:
+   - Use tags to organize your models. For instance, tag models based on the projects they are used for (e.g., “Logistics Optimization” or “NPC Conversations”).
+
+#### Examples:
+
+- **Logistics Example**: You might create separate cloned models for each mode of transportation (e.g., truck, ship, and airplane). This allows you to fine-tune each one for specific conditions, like shipping route preferences or cost factors.
+
+- **Game Development Example**: Clone an NPC dialogue model and adapt it for different environments. For example, one cloned model could handle desert environments, and another could generate dialogue for underwater levels. Tagging these models makes it easy to switch between them during development.
+
+---
+
+### e. **Model Presets**
+
+#### Step-by-Step:
+
+1. **Save Model Configurations**: 
+   - After fine-tuning a model and attaching relevant documents or tools, you can save this configuration as a preset. This allows you to quickly reload the same setup later.
+
+2. **Switch Between Presets**: 
+   - Presets can be helpful if you frequently switch between tasks, such as moving between analyzing inventory data and optimizing delivery routes.
+
+#### Examples:
+
+- **Logistics Example**: Save a preset for **warehouse inventory analysis** where the model focuses on stock levels and reordering times. You could also create another preset for **route optimization** with the model optimized for predicting delivery delays based on historical traffic patterns.
+
+- **Game Development Example**: Save presets for different types of NPC interactions. One preset could focus on **merchant NPCs** that trade with the player, while another preset could focus on **quest-giving NPCs**, referencing different storyline documents for varied conversations.
+
+---
+
+### f. **Ollama Model Management**
+
+#### Step-by-Step:
+
+1. **Download Models from Ollama**: 
+   - You can easily download models from the Ollama Library. These models are optimized for various tasks, from decision-making to conversational simulations.
+
+2. **Upload GGUF Models**: 
+   - For advanced users, the Workspace allows you to upload GGUF models, which are customized models tailored to specific use cases, like logistics planning or game simulation.
+
+3. **Monitor Model Performance**:
+   - Keep an eye on how your models perform. The Workspace provides feedback on response times and error rates, helping you fine-tune their performance further.
+
+#### Examples:
+
+- **Logistics Example**: Download a decision-making model from Ollama that can predict the most cost-effective shipping routes based on real-time fuel prices and delivery demands.
+  
+- **Game Development Example**: Download a language model that specializes in generating NPC conversations. Then upload custom character documents that help the model create unique, contextually relevant dialogues based on player actions.

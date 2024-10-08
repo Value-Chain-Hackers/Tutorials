@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "Tutorials and Tools"
+  author: "Christiaan Verhoef"
+  date: "10/08/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - interface.qmd
+    - agents.qmd
+    - redefine.qmd
+    - testing.qmd
+    - collaboration.qmd
+    - intergration.qmd
+    - examples.qmd
+    - scaling.qmd
+    - finalthoughts.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

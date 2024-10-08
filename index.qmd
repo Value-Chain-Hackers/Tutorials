@@ -1,0 +1,12 @@
+# Preface {.unnumbered}
+
+In the world of logistics and serious game development, we often find ourselves juggling complexity and creativity. Here’s where OpenWebUI comes in—our trusty tool to bring order and insight to that delightful chaos. 
+
+We’re not going to bother with installation today (you’re clever enough to have that sorted!). Instead, let’s jump straight into what matters most: **How to use OpenWebUI to get things done**.
+
+This book is your guide to mastering OpenWebUI, built step by step, with a focus on practical usage. Whether you're optimizing logistics routes or crafting engaging in-game interactions, you'll find ways to streamline your processes, automate tasks, and make your work both efficient and fun.
+
+Ready? Breathe, get comfortable, and let’s embark on this journey together. It’s going to be an exciting ride.
+
+---
+

@@ -1,0 +1,5 @@
+# Real-World Examples and Case Studies
+  - Optimizing game dialogues with NPC agents
+    - Using agents to simulate supply chain disruptions
+    - Logistics route optimization: Step-by-step case study
+    - Applying OpenWebUI in academic research
