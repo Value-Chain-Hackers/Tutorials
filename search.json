@@ -114,7 +114,7 @@
     "href": "agents.html",
     "title": "3  Crafting Your First Agent: Getting Started with Bots",
     "section": "",
-    "text": "3.1 1. Models\nThe Models tab is where you can create, modify, and manage AI models. It supports: - Model creation, editing, and fine-tuning - Integration with external APIs (Ollama, OpenAI) - Attaching documents and tools to models - Model tagging, cloning, and sharing - Adjustable model parameters (e.g., temperature, seed)",
+    "text": "3.1 1. Models\nThe Models tab is where you can create, modify, and manage AI models.\nYou can create, edit, and fine-tune models, including those from external sources like Ollama or OpenAI. It supports functionalities like tagging, cloning, sharing, and exporting model files. You can also attach tools and documents to enhance the model’s capabilities, allowing integration with Retrieval Augmented Generation (RAG) for document-based queries​\nIt supports: - Model creation, editing, and fine-tuning - Integration with external APIs (Ollama, OpenAI) - Attaching documents and tools to models - Model tagging, cloning, and sharing - Adjustable model parameters (e.g., temperature, seed)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Crafting Your First Agent: Getting Started with Bots</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "agents.html#prompts",
     "title": "3  Crafting Your First Agent: Getting Started with Bots",
     "section": "3.2 2. Prompts",
-    "text": "3.2 2. Prompts\nThe Prompts tab allows for the management and customization of predefined prompts, making interactions with models more efficient. This includes: - Creating and storing prompt presets - Utilizing dynamic variables in prompts (e.g., date, user name) - Setting up system prompts for specific interactions",
+    "text": "3.2 2. Prompts\nThe Prompts tab allows for the management and customization of predefined prompts, making interactions with models more efficient. You can set custom system prompts or load prompt presets, making it easy to engage the model in a structured way. This tab may also support prompt variables like {{CURRENT_DATE}}, making interactions dynamic This includes: - Creating and storing prompt presets - Utilizing dynamic variables in prompts (e.g., date, user name) - Setting up system prompts for specific interactions",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Crafting Your First Agent: Getting Started with Bots</span>"
     ]
@@ -134,7 +134,7 @@
     "href": "agents.html#documents",
     "title": "3  Crafting Your First Agent: Getting Started with Bots",
     "section": "3.3 3. Documents",
-    "text": "3.3 3. Documents\nThe Documents tab is primarily used for integrating knowledge sources with models. You can: - Upload documents for reference in conversations - Use document-based queries via the RAG (Retrieval Augmented Generation) feature - Organize and manage document sources for quick access",
+    "text": "3.3 3. Documents\nThe Documents tab is primarily used for integrating knowledge sources with models. The Documents tab integrates with RAG, enabling models to use document content for more informed responses. You can upload and organize documents that the model references during conversations, improving the quality of interactions based on specific content You can: - Upload documents for reference in conversations - Use document-based queries via the RAG (Retrieval Augmented Generation) feature - Organize and manage document sources for quick access",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Crafting Your First Agent: Getting Started with Bots</span>"
     ]
@@ -144,7 +144,7 @@
     "href": "agents.html#tools",
     "title": "3  Crafting Your First Agent: Getting Started with Bots",
     "section": "3.4 4. Tools",
-    "text": "3.4 4. Tools\nThe Tools tab provides access to various extensions and utilities that enhance the model’s capabilities. This includes: - Image generation, text processing, or code execution tools - Custom-built or third-party tools that can be integrated with your model workflows",
+    "text": "3.4 4. Tools\nThe Tools tab provides access to various extensions and utilities that enhance the model’s capabilities. The Tools tab allows you to assign various tools to your models. These tools can range from image generation engines to custom Python code, depending on the task. For example, a Python code editor could be integrated here to extend the model’s functionality with custom code execution.\nThis includes: - Image generation, text processing, or code execution tools - Custom-built or third-party tools that can be integrated with your model workflows",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Crafting Your First Agent: Getting Started with Bots</span>"
     ]
@@ -154,7 +154,7 @@
     "href": "agents.html#functions",
     "title": "3  Crafting Your First Agent: Getting Started with Bots",
     "section": "3.5 5. Functions",
-    "text": "3.5 5. Functions\nThe Functions tab allows you to define specific pipelines and actions that models can perform. It is useful for: - Creating custom workflows using functions like filters or pipelines - Setting up configurations for model actions based on user interactions",
+    "text": "3.5 5. Functions\nThe Functions tab allows you to define specific pipelines and actions that models can perform. Functions allow you to define specific actions or pipelines for the models. This can include things like filters, pipes, and even custom user-defined functions to control the flow of data through the model. Functions like valves can be used to manage configuration options or user controls dynamically​.\nIt is useful for: - Creating custom workflows using functions like filters or pipelines - Setting up configurations for model actions based on user interactions",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Crafting Your First Agent: Getting Started with Bots</span>"
     ]
@@ -174,7 +174,67 @@
     "href": "redefine.html",
     "title": "4  Refining Agent Behavior: Making Them Smarter",
     "section": "",
-    "text": "Adjusting parameters for more effective performance\n\nTeaching your agent new tricks: Customization\nTroubleshooting common agent issues\nUsing feedback loops to improve agent responses",
+    "text": "4.1 Step 1: Set a Clear System Prompt\nThe system prompt is where the agent’s core instructions are defined. This is what tells the agent how to behave overall, so getting this right is the first step in improving its intelligence. To make your agent smarter, you need to set detailed instructions that account for the nuances of the tasks you expect it to handle.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refining Agent Behavior: Making Them Smarter</span>"
+    ]
+  },
+  {
+    "objectID": "redefine.html#step-1-set-a-clear-system-prompt",
+    "href": "redefine.html#step-1-set-a-clear-system-prompt",
+    "title": "4  Refining Agent Behavior: Making Them Smarter",
+    "section": "",
+    "text": "Refinement Tip: As your agent’s role becomes more complex, expand the system prompt to cover more specific conditions or priorities. For example, if your agent is managing multiple tasks (like optimizing routes while managing driver schedules), add this layered instruction in the system prompt.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refining Agent Behavior: Making Them Smarter</span>"
+    ]
+  },
+  {
+    "objectID": "redefine.html#step-2-fine-tune-advanced-parameters",
+    "href": "redefine.html#step-2-fine-tune-advanced-parameters",
+    "title": "4  Refining Agent Behavior: Making Them Smarter",
+    "section": "4.2 Step 2: Fine-Tune Advanced Parameters",
+    "text": "4.2 Step 2: Fine-Tune Advanced Parameters\nIn the Advanced Parameters section of the right panel, you can fine-tune the agent’s behavior. This allows you to control the agent’s creativity, consistency, and response predictability, which are key for making the agent smarter.\n\nTemperature: Lower the temperature if you want the agent to give more focused and consistent responses. Raise it slightly if you want the agent to explore creative solutions when faced with ambiguity.\nTop K & Top P: These parameters affect how broad or narrow the agent’s decision-making scope is. Narrow these values (reduce Top K and Top P) to make the agent more deterministic and focused on the most reliable responses. Adjust them upwards to encourage more creative, exploratory answers.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refining Agent Behavior: Making Them Smarter</span>"
+    ]
+  },
+  {
+    "objectID": "redefine.html#step-3-establish-behavioral-rules",
+    "href": "redefine.html#step-3-establish-behavioral-rules",
+    "title": "4  Refining Agent Behavior: Making Them Smarter",
+    "section": "4.3 Step 3: Establish Behavioral Rules",
+    "text": "4.3 Step 3: Establish Behavioral Rules\nSmart agents need clear rules on how to react to specific situations. The behavior rules are like a set of conditions and responses that you can define to make the agent adaptive to various scenarios.\n\nTriggers: Set up triggers for certain inputs or external factors. For example, if you’re working on a logistics agent, a trigger could be “if traffic delay exceeds 30 minutes, recalibrate the route.”\nActions: Pair triggers with actions that the agent should take once certain conditions are met. This can include recalculating data, fetching additional information, or issuing a response. For an NPC in a game, you could add an emotional reaction based on player interaction.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refining Agent Behavior: Making Them Smarter</span>"
+    ]
+  },
+  {
+    "objectID": "redefine.html#step-4-leverage-feedback-loops",
+    "href": "redefine.html#step-4-leverage-feedback-loops",
+    "title": "4  Refining Agent Behavior: Making Them Smarter",
+    "section": "4.4 Step 4: Leverage Feedback Loops",
+    "text": "4.4 Step 4: Leverage Feedback Loops\nTo make your agent continuously improve, set up feedback loops. A feedback loop allows the agent to learn from its actions and adjust its behavior dynamically. For instance, after receiving input from a user, the agent can ask clarifying questions, ensuring its next action aligns with the desired goal.\n\nIterative Learning: Make the agent evaluate its past responses. For instance, you could introduce a rule that allows the agent to reevaluate whether its initial response was optimal and suggest improvements on the go.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refining Agent Behavior: Making Them Smarter</span>"
+    ]
+  },
+  {
+    "objectID": "redefine.html#step-5-incorporate-external-knowledge-and-tools",
+    "href": "redefine.html#step-5-incorporate-external-knowledge-and-tools",
+    "title": "4  Refining Agent Behavior: Making Them Smarter",
+    "section": "4.5 Step 5: Incorporate External Knowledge and Tools",
+    "text": "4.5 Step 5: Incorporate External Knowledge and Tools\nMaking your agent smarter involves giving it access to external data or tools. If your agent needs to perform more complex tasks like analyzing traffic data or fetching up-to-date pricing information, integrate external tools or documents via the Tools Workspace or Documents Workspace.\n\nDocuments: If the agent needs access to specific data sets or files, upload these documents to the Documents Workspace and link them to the agent.\nToolkits: For example, linking APIs like real-time traffic data for a logistics agent or databases for a research agent will give it additional context, enabling it to make smarter decisions based on fresh, real-world inputs.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refining Agent Behavior: Making Them Smarter</span>"
+    ]
+  },
+  {
+    "objectID": "redefine.html#step-6-test-and-refine",
+    "href": "redefine.html#step-6-test-and-refine",
+    "title": "4  Refining Agent Behavior: Making Them Smarter",
+    "section": "4.6 Step 6: Test and Refine",
+    "text": "4.6 Step 6: Test and Refine\nFinally, constantly test your agent’s responses to different scenarios to ensure that it’s acting intelligently. You can simulate real-world inputs or dynamic game interactions to evaluate how well the agent handles complex tasks.\n\nIterative Testing: Each time you make adjustments to the agent’s behavior rules, system prompt, or advanced parameters, run new tests. Pay attention to how the agent adapts to various situations, and keep refining its settings until it performs optimally.\n\n\n\n4.6.1 Final Thoughts\nRefining your agent’s behavior is an iterative process that requires ongoing adjustment and testing. By setting clear system prompts, fine-tuning advanced parameters, establishing behavior rules, leveraging feedback loops, and incorporating external tools, you’ll develop an intelligent, adaptable agent capable of handling complex tasks effectively.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refining Agent Behavior: Making Them Smarter</span>"
     ]
@@ -194,7 +254,67 @@
     "href": "collaboration.html",
     "title": "6  Testing Agents: Trial and Error for Perfection",
     "section": "",
-    "text": "Setting up test cases for logistics scenarios\nRunning in-game simulations with NPC bots\nGathering feedback: How to observe agent behavior\nTweaking based on test results: Iterative improvements",
+    "text": "6.1 Step 1: Define Clear Test Scenarios\nBefore diving into testing, it’s crucial to define what scenarios you want your agent to handle. These should reflect real-world use cases where the agent will be deployed. Define different conditions and interactions that your agent might face during its operation.\nBy outlining your scenarios first, you have a structured approach to evaluate the agent’s behavior.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
+    ]
+  },
+  {
+    "objectID": "collaboration.html#step-1-define-clear-test-scenarios",
+    "href": "collaboration.html#step-1-define-clear-test-scenarios",
+    "title": "6  Testing Agents: Trial and Error for Perfection",
+    "section": "",
+    "text": "Logistics Agent Example: If your agent is managing delivery routes, you could test how it handles sudden traffic delays or requests for optimizing multiple delivery points at once.\nGame NPC Example: If you’re working with an NPC agent, define scenarios like how it reacts when a player takes aggressive actions or asks certain questions.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
+    ]
+  },
+  {
+    "objectID": "collaboration.html#step-2-run-live-interactions",
+    "href": "collaboration.html#step-2-run-live-interactions",
+    "title": "6  Testing Agents: Trial and Error for Perfection",
+    "section": "6.2 Step 2: Run Live Interactions",
+    "text": "6.2 Step 2: Run Live Interactions\nOnce your test scenarios are ready, it’s time to start running live interactions with your agent. These real-time interactions will show how well your agent responds to commands and conditions based on the system prompts, rules, and parameters you’ve configured.\n\nOpen the center panel in OpenWebUI to begin interacting with your agent.\nIssue a command or input relevant to your test scenario. For example:\n\n\"Optimize the fastest route considering a 20-minute traffic delay on Route A.\"\n\"Respond to the player’s hostile question with a defensive answer.\"\n\nWatch how your agent processes the input and generates a response. Pay close attention to how closely the response aligns with your expectations.\n\nPro Tip: Record the agent’s responses for each scenario. This will help you track its behavior across multiple test sessions.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
+    ]
+  },
+  {
+    "objectID": "collaboration.html#step-3-adjust-and-rerun-tests",
+    "href": "collaboration.html#step-3-adjust-and-rerun-tests",
+    "title": "6  Testing Agents: Trial and Error for Perfection",
+    "section": "6.3 Step 3: Adjust and Rerun Tests",
+    "text": "6.3 Step 3: Adjust and Rerun Tests\nIt’s unlikely that your agent will perform perfectly on the first try. This is where trial and error come into play. Based on the agent’s performance, you’ll need to revisit its configuration and make tweaks to improve its behavior.\n\nRefine System Prompts: If the agent’s response is off-track, consider revising the system prompt to give clearer or more focused instructions.\nModify Parameters: Adjust parameters like temperature, Top K, and frequency penalty to fine-tune the agent’s creativity, response consistency, and overall behavior.\n\nAfter making adjustments, run the tests again to see how the agent’s behavior has improved. Repeat this process as often as necessary to get closer to the desired result.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
+    ]
+  },
+  {
+    "objectID": "collaboration.html#step-4-simulate-edge-cases",
+    "href": "collaboration.html#step-4-simulate-edge-cases",
+    "title": "6  Testing Agents: Trial and Error for Perfection",
+    "section": "6.4 Step 4: Simulate Edge Cases",
+    "text": "6.4 Step 4: Simulate Edge Cases\nBeyond standard test scenarios, it’s important to simulate edge cases—situations that might be rare but still possible in the real-world use of your agent. These cases will test the limits of the agent’s adaptability.\n\nLogistics Edge Case: Test how the agent responds to a sudden closure of all major routes, forcing it to find a highly unconventional route.\nNPC Edge Case: Simulate an extreme or unusual player interaction, like repeated aggressive behavior or a complex multi-step question.\n\nBy running these more complex or unexpected tests, you’ll uncover potential weaknesses in your agent’s logic or adaptability.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
+    ]
+  },
+  {
+    "objectID": "collaboration.html#step-5-gather-feedback-and-iterate",
+    "href": "collaboration.html#step-5-gather-feedback-and-iterate",
+    "title": "6  Testing Agents: Trial and Error for Perfection",
+    "section": "6.5 Step 5: Gather Feedback and Iterate",
+    "text": "6.5 Step 5: Gather Feedback and Iterate\nTesting doesn’t end with a single round of adjustments. Use feedback loops from your testing sessions to continually improve your agent. If you’re testing in a collaborative environment, gather feedback from colleagues or users to get different perspectives on the agent’s performance.\n\nFeedback Questions:\n\nWas the agent’s response clear and aligned with the task?\nDid the agent handle unexpected scenarios gracefully?\nWere the responses consistent and reliable, or too random?",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
+    ]
+  },
+  {
+    "objectID": "collaboration.html#step-6-monitor-long-term-performance",
+    "href": "collaboration.html#step-6-monitor-long-term-performance",
+    "title": "6  Testing Agents: Trial and Error for Perfection",
+    "section": "6.6 Step 6: Monitor Long-Term Performance",
+    "text": "6.6 Step 6: Monitor Long-Term Performance\nFinally, once your agent is deployed in a live setting, it’s important to monitor its long-term performance. This includes checking how well the agent handles real-world data and conditions over extended periods.\n\nAutomated Testing: Consider setting up automated test cases that run at regular intervals to ensure that your agent continues to perform optimally. These tests can track changes in external conditions (such as updates in the logistics network or game dynamics) and help you proactively address any issues.\n\n\n\n6.6.1 Final Thoughts\nTesting your agent is not a one-time task but a continuous process of refinement. By using structured testing methods, adjusting settings through trial and error, and monitoring performance over time, you can create a smarter, more responsive agent. The key to perfection is iteration—fine-tuning the agent until it performs consistently and intelligently in real-world scenarios.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Testing Agents: Trial and Error for Perfection</span>"
     ]

@@ -189,8 +189,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#step-1-set-a-clear-system-prompt" id="toc-step-1-set-a-clear-system-prompt" class="nav-link active" data-scroll-target="#step-1-set-a-clear-system-prompt"><span class="header-section-number">4.1</span> Step 1: Set a Clear System Prompt</a></li>
+  <li><a href="#step-2-fine-tune-advanced-parameters" id="toc-step-2-fine-tune-advanced-parameters" class="nav-link" data-scroll-target="#step-2-fine-tune-advanced-parameters"><span class="header-section-number">4.2</span> Step 2: Fine-Tune Advanced Parameters</a></li>
+  <li><a href="#step-3-establish-behavioral-rules" id="toc-step-3-establish-behavioral-rules" class="nav-link" data-scroll-target="#step-3-establish-behavioral-rules"><span class="header-section-number">4.3</span> Step 3: Establish Behavioral Rules</a></li>
+  <li><a href="#step-4-leverage-feedback-loops" id="toc-step-4-leverage-feedback-loops" class="nav-link" data-scroll-target="#step-4-leverage-feedback-loops"><span class="header-section-number">4.4</span> Step 4: Leverage Feedback Loops</a></li>
+  <li><a href="#step-5-incorporate-external-knowledge-and-tools" id="toc-step-5-incorporate-external-knowledge-and-tools" class="nav-link" data-scroll-target="#step-5-incorporate-external-knowledge-and-tools"><span class="header-section-number">4.5</span> Step 5: Incorporate External Knowledge and Tools</a></li>
+  <li><a href="#step-6-test-and-refine" id="toc-step-6-test-and-refine" class="nav-link" data-scroll-target="#step-6-test-and-refine"><span class="header-section-number">4.6</span> Step 6: Test and Refine</a>
+  <ul class="collapse">
+  <li><a href="#final-thoughts" id="toc-final-thoughts" class="nav-link" data-scroll-target="#final-thoughts"><span class="header-section-number">4.6.1</span> Final Thoughts</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -222,8 +236,66 @@ ul.task-list li input[type="checkbox"] {
 <li>Using feedback loops to improve agent responses</li>
 </ul></li>
 </ul>
+<p>Once you’ve created a basic agent in OpenWebUI using the <strong>Workbench Tool</strong>, the next step is to refine its behavior to make it smarter and more adaptable. This involves adjusting the agent’s responses, setting up triggers, and fine-tuning how it interprets and acts on inputs.</p>
+<p>Let’s walk through the process of refining your agent’s behavior step by step, with a focus on improving its decision-making capabilities and adaptability.</p>
+<hr>
+<section id="step-1-set-a-clear-system-prompt" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="step-1-set-a-clear-system-prompt"><span class="header-section-number">4.1</span> Step 1: Set a Clear System Prompt</h2>
+<p>The <strong>system prompt</strong> is where the agent’s core instructions are defined. This is what tells the agent how to behave overall, so getting this right is the first step in improving its intelligence. To make your agent smarter, you need to set detailed instructions that account for the nuances of the tasks you expect it to handle.</p>
+<ul>
+<li><strong>Refinement Tip</strong>: As your agent’s role becomes more complex, expand the system prompt to cover more specific conditions or priorities. For example, if your agent is managing multiple tasks (like optimizing routes while managing driver schedules), add this layered instruction in the system prompt.</li>
+</ul>
+<hr>
+</section>
+<section id="step-2-fine-tune-advanced-parameters" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="step-2-fine-tune-advanced-parameters"><span class="header-section-number">4.2</span> Step 2: Fine-Tune Advanced Parameters</h2>
+<p>In the <strong>Advanced Parameters</strong> section of the <strong>right panel</strong>, you can fine-tune the agent’s behavior. This allows you to control the agent’s creativity, consistency, and response predictability, which are key for making the agent smarter.</p>
+<ul>
+<li><p><strong>Temperature</strong>: Lower the temperature if you want the agent to give more focused and consistent responses. Raise it slightly if you want the agent to explore creative solutions when faced with ambiguity.</p></li>
+<li><p><strong>Top K &amp; Top P</strong>: These parameters affect how broad or narrow the agent’s decision-making scope is. Narrow these values (reduce <strong>Top K</strong> and <strong>Top P</strong>) to make the agent more deterministic and focused on the most reliable responses. Adjust them upwards to encourage more creative, exploratory answers.</p></li>
+</ul>
+<hr>
+</section>
+<section id="step-3-establish-behavioral-rules" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="step-3-establish-behavioral-rules"><span class="header-section-number">4.3</span> Step 3: Establish Behavioral Rules</h2>
+<p>Smart agents need clear rules on how to react to specific situations. The <strong>behavior rules</strong> are like a set of conditions and responses that you can define to make the agent adaptive to various scenarios.</p>
+<ul>
+<li><p><strong>Triggers</strong>: Set up triggers for certain inputs or external factors. For example, if you’re working on a logistics agent, a trigger could be “if traffic delay exceeds 30 minutes, recalibrate the route.”</p></li>
+<li><p><strong>Actions</strong>: Pair triggers with actions that the agent should take once certain conditions are met. This can include recalculating data, fetching additional information, or issuing a response. For an NPC in a game, you could add an emotional reaction based on player interaction.</p></li>
+</ul>
+<hr>
+</section>
+<section id="step-4-leverage-feedback-loops" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="step-4-leverage-feedback-loops"><span class="header-section-number">4.4</span> Step 4: Leverage Feedback Loops</h2>
+<p>To make your agent continuously improve, set up <strong>feedback loops</strong>. A feedback loop allows the agent to learn from its actions and adjust its behavior dynamically. For instance, after receiving input from a user, the agent can ask clarifying questions, ensuring its next action aligns with the desired goal.</p>
+<ul>
+<li><strong>Iterative Learning</strong>: Make the agent evaluate its past responses. For instance, you could introduce a rule that allows the agent to reevaluate whether its initial response was optimal and suggest improvements on the go.</li>
+</ul>
+<hr>
+</section>
+<section id="step-5-incorporate-external-knowledge-and-tools" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="step-5-incorporate-external-knowledge-and-tools"><span class="header-section-number">4.5</span> Step 5: Incorporate External Knowledge and Tools</h2>
+<p>Making your agent smarter involves giving it access to external data or tools. If your agent needs to perform more complex tasks like analyzing traffic data or fetching up-to-date pricing information, integrate external tools or documents via the <strong>Tools Workspace</strong> or <strong>Documents Workspace</strong>.</p>
+<ul>
+<li><p><strong>Documents</strong>: If the agent needs access to specific data sets or files, upload these documents to the <strong>Documents Workspace</strong> and link them to the agent.</p></li>
+<li><p><strong>Toolkits</strong>: For example, linking APIs like real-time traffic data for a logistics agent or databases for a research agent will give it additional context, enabling it to make smarter decisions based on fresh, real-world inputs.</p></li>
+</ul>
+<hr>
+</section>
+<section id="step-6-test-and-refine" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="step-6-test-and-refine"><span class="header-section-number">4.6</span> Step 6: Test and Refine</h2>
+<p>Finally, constantly <strong>test</strong> your agent’s responses to different scenarios to ensure that it’s acting intelligently. You can simulate real-world inputs or dynamic game interactions to evaluate how well the agent handles complex tasks.</p>
+<ul>
+<li><strong>Iterative Testing</strong>: Each time you make adjustments to the agent’s behavior rules, system prompt, or advanced parameters, run new tests. Pay attention to how the agent adapts to various situations, and keep refining its settings until it performs optimally.</li>
+</ul>
+<hr>
+<section id="final-thoughts" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="final-thoughts"><span class="header-section-number">4.6.1</span> Final Thoughts</h3>
+<p>Refining your agent’s behavior is an iterative process that requires ongoing adjustment and testing. By setting clear system prompts, fine-tuning advanced parameters, establishing behavior rules, leveraging feedback loops, and incorporating external tools, you’ll develop an intelligent, adaptable agent capable of handling complex tasks effectively.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
