@@ -189,8 +189,34 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#scaling-and-maintenance-keeping-your-agents-up-to-date" id="toc-scaling-and-maintenance-keeping-your-agents-up-to-date" class="nav-link active" data-scroll-target="#scaling-and-maintenance-keeping-your-agents-up-to-date"><span class="header-section-number">10</span> Scaling and Maintenance: Keeping Your Agents Up-to-Date</a>
+  <ul class="collapse">
+  <li><a href="#scaling-agents-for-larger-projects" id="toc-scaling-agents-for-larger-projects" class="nav-link" data-scroll-target="#scaling-agents-for-larger-projects"><span class="header-section-number">10.1</span> Scaling Agents for Larger Projects</a>
+  <ul class="collapse">
+  <li><a href="#horizontal-scaling-more-agents-more-tasks" id="toc-horizontal-scaling-more-agents-more-tasks" class="nav-link" data-scroll-target="#horizontal-scaling-more-agents-more-tasks"><span class="header-section-number">10.1.1</span> Horizontal Scaling: More Agents, More Tasks</a></li>
+  <li><a href="#vertical-scaling-supercharge-your-existing-agents" id="toc-vertical-scaling-supercharge-your-existing-agents" class="nav-link" data-scroll-target="#vertical-scaling-supercharge-your-existing-agents"><span class="header-section-number">10.1.2</span> Vertical Scaling: Supercharge Your Existing Agents</a></li>
+  </ul></li>
+  <li><a href="#monitoring-agent-performance-over-time" id="toc-monitoring-agent-performance-over-time" class="nav-link" data-scroll-target="#monitoring-agent-performance-over-time"><span class="header-section-number">10.2</span> Monitoring Agent Performance Over Time</a>
+  <ul class="collapse">
+  <li><a href="#performance-metrics-keeping-an-eye-on-things" id="toc-performance-metrics-keeping-an-eye-on-things" class="nav-link" data-scroll-target="#performance-metrics-keeping-an-eye-on-things"><span class="header-section-number">10.2.1</span> Performance Metrics: Keeping an Eye on Things</a></li>
+  <li><a href="#iterative-improvements" id="toc-iterative-improvements" class="nav-link" data-scroll-target="#iterative-improvements"><span class="header-section-number">10.2.2</span> Iterative Improvements</a></li>
+  </ul></li>
+  <li><a href="#regular-updates-and-maintenance-for-optimal-performance" id="toc-regular-updates-and-maintenance-for-optimal-performance" class="nav-link" data-scroll-target="#regular-updates-and-maintenance-for-optimal-performance"><span class="header-section-number">10.3</span> Regular Updates and Maintenance for Optimal Performance</a>
+  <ul class="collapse">
+  <li><a href="#routine-maintenance-keep-it-fresh" id="toc-routine-maintenance-keep-it-fresh" class="nav-link" data-scroll-target="#routine-maintenance-keep-it-fresh"><span class="header-section-number">10.3.1</span> Routine Maintenance: Keep It Fresh</a></li>
+  </ul></li>
+  <li><a href="#how-to-retire-outdated-agents" id="toc-how-to-retire-outdated-agents" class="nav-link" data-scroll-target="#how-to-retire-outdated-agents"><span class="header-section-number">10.4</span> How to Retire Outdated Agents</a>
+  <ul class="collapse">
+  <li><a href="#retiring-agents-gracefully" id="toc-retiring-agents-gracefully" class="nav-link" data-scroll-target="#retiring-agents-gracefully"><span class="header-section-number">10.4.1</span> Retiring Agents Gracefully</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -222,8 +248,74 @@ ul.task-list li input[type="checkbox"] {
 <li>How to retire outdated agents</li>
 </ul></li>
 </ul>
+<section id="scaling-and-maintenance-keeping-your-agents-up-to-date" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Scaling and Maintenance: Keeping Your Agents Up-to-Date</h1>
+<p>When you’re scaling agents for bigger projects, whether it’s for logistics or complex game development, the key is making sure they grow alongside your needs without losing efficiency. The same goes for maintenance—keeping your agents sharp and updated is just as important as building them in the first place. Let’s walk through how to ensure your agents not only scale well but also stay in top form over time.</p>
+<hr>
+<section id="scaling-agents-for-larger-projects" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="scaling-agents-for-larger-projects"><span class="header-section-number">10.1</span> Scaling Agents for Larger Projects</h2>
+<p>Scaling is all about making sure your agents can handle the increased load as your project grows. Whether you’re dealing with more data or expanding the number of tasks your agents handle, scaling smoothly is crucial.</p>
+<section id="horizontal-scaling-more-agents-more-tasks" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="horizontal-scaling-more-agents-more-tasks"><span class="header-section-number">10.1.1</span> Horizontal Scaling: More Agents, More Tasks</h3>
+<p>As your projects get bigger, sometimes the easiest way to scale is by adding more agents. Instead of overloading a single agent with too many responsibilities, spread the tasks across multiple agents, each focused on a specific role.</p>
+<ul>
+<li><strong>Example</strong>: In logistics, you might have one agent focused solely on real-time traffic data and another one managing warehouse inventories. These agents can then communicate and share data, keeping your workflow smooth and fast.</li>
+</ul>
+</section>
+<section id="vertical-scaling-supercharge-your-existing-agents" class="level3" data-number="10.1.2">
+<h3 data-number="10.1.2" class="anchored" data-anchor-id="vertical-scaling-supercharge-your-existing-agents"><span class="header-section-number">10.1.2</span> Vertical Scaling: Supercharge Your Existing Agents</h3>
+<p>If you don’t want to add more agents, another approach is <strong>vertical scaling</strong>, where you beef up the existing agents by improving their performance and capabilities. You can use more powerful models or fine-tune advanced parameters to get more out of them.</p>
+<ul>
+<li><strong>Advanced Parameters</strong>: Adjust settings like <strong>temperature</strong> or <strong>max tokens</strong> to give your agents more control over the complexity and length of their responses. This is especially useful for agents that need to process more complex inputs or produce more detailed outputs.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="monitoring-agent-performance-over-time" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="monitoring-agent-performance-over-time"><span class="header-section-number">10.2</span> Monitoring Agent Performance Over Time</h2>
+<p>You can’t just set your agents loose and hope for the best—tracking how they perform over time is crucial. Without proper monitoring, your agents might slow down, lose efficiency, or make errors that go unnoticed until it’s too late.</p>
+<section id="performance-metrics-keeping-an-eye-on-things" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="performance-metrics-keeping-an-eye-on-things"><span class="header-section-number">10.2.1</span> Performance Metrics: Keeping an Eye on Things</h3>
+<p>Set up <strong>performance metrics</strong> to track how efficiently your agents are completing tasks. This includes tracking response times, task completion rates, and any errors that pop up.</p>
+<ul>
+<li><strong>Agent Monitoring Tools</strong>: Use tools that allow you to keep tabs on how agents are handling their workload. If you notice a drop in performance, it might be time to adjust parameters or split tasks across more agents.</li>
+</ul>
+</section>
+<section id="iterative-improvements" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="iterative-improvements"><span class="header-section-number">10.2.2</span> Iterative Improvements</h3>
+<p>Even after your agents are up and running, you’ll likely find areas where they can improve. Regularly check back on their <strong>system prompts</strong> and <strong>behavior</strong>. Little tweaks can make a big difference over time, especially as you introduce more complex tasks or additional data.</p>
+<hr>
+</section>
+</section>
+<section id="regular-updates-and-maintenance-for-optimal-performance" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="regular-updates-and-maintenance-for-optimal-performance"><span class="header-section-number">10.3</span> Regular Updates and Maintenance for Optimal Performance</h2>
+<p>Just like any other part of your system, agents need regular upkeep. As new data becomes available or workflows evolve, your agents should reflect those changes. Keeping your agents updated ensures they stay relevant and accurate.</p>
+<section id="routine-maintenance-keep-it-fresh" class="level3" data-number="10.3.1">
+<h3 data-number="10.3.1" class="anchored" data-anchor-id="routine-maintenance-keep-it-fresh"><span class="header-section-number">10.3.1</span> Routine Maintenance: Keep It Fresh</h3>
+<ul>
+<li><p><strong>System Prompt Updates</strong>: The core instruction your agent follows (its system prompt) might need adjusting as your workflow changes. Make it a habit to check in on how your agents are interpreting data and responding to tasks, and tweak their prompts accordingly.</p></li>
+<li><p><strong>Retraining Agents</strong>: If your agents rely on static data, such as traffic patterns from last year or old inventory reports, retrain them with fresh data. This will ensure they continue making smart, real-time decisions.</p></li>
+<li><p><strong>Error Handling</strong>: Set up a system for handling errors. If an agent fails or provides incorrect output, there should be fallback mechanisms to catch the issue and either resolve it or notify you.</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="how-to-retire-outdated-agents" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="how-to-retire-outdated-agents"><span class="header-section-number">10.4</span> How to Retire Outdated Agents</h2>
+<p>At some point, you’ll need to retire old agents that are no longer relevant to your workflow. This is just as important as keeping your current ones updated. Old agents that are no longer in use can clutter your system and make maintenance harder than it needs to be.</p>
+<section id="retiring-agents-gracefully" class="level3" data-number="10.4.1">
+<h3 data-number="10.4.1" class="anchored" data-anchor-id="retiring-agents-gracefully"><span class="header-section-number">10.4.1</span> Retiring Agents Gracefully</h3>
+<ul>
+<li><p><strong>Archive Agents</strong>: When an agent has served its purpose or when newer versions of the agent take over, archive it rather than leaving it active. This keeps your workspace organized and helps avoid confusion.</p></li>
+<li><p><strong>Redirect Tasks</strong>: If you’re replacing an agent, ensure all tasks and workflows assigned to it are properly handed off to a new or updated agent. This avoids any gaps in your workflow.</p></li>
+<li><p><strong>Document the Process</strong>: Before deactivating an agent, document what it was used for and why it’s being retired. This documentation will be helpful if you ever need to revisit that workflow or build a similar agent in the future.</p></li>
+</ul>
+<hr>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

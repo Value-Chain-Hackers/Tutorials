@@ -464,7 +464,47 @@
     "href": "scaling.html",
     "title": "9  Scaling and Maintenance: Keeping Your Agents Up-to-Date",
     "section": "",
-    "text": "Scaling agents for larger projects\n\nMonitoring agent performance over time\nRegular updates and maintenance for optimal performance\nHow to retire outdated agents",
+    "text": "10 Scaling and Maintenance: Keeping Your Agents Up-to-Date\nWhen you’re scaling agents for bigger projects, whether it’s for logistics or complex game development, the key is making sure they grow alongside your needs without losing efficiency. The same goes for maintenance—keeping your agents sharp and updated is just as important as building them in the first place. Let’s walk through how to ensure your agents not only scale well but also stay in top form over time.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Scaling and Maintenance: Keeping Your Agents Up-to-Date</span>"
+    ]
+  },
+  {
+    "objectID": "scaling.html#scaling-agents-for-larger-projects",
+    "href": "scaling.html#scaling-agents-for-larger-projects",
+    "title": "9  Scaling and Maintenance: Keeping Your Agents Up-to-Date",
+    "section": "10.1 Scaling Agents for Larger Projects",
+    "text": "10.1 Scaling Agents for Larger Projects\nScaling is all about making sure your agents can handle the increased load as your project grows. Whether you’re dealing with more data or expanding the number of tasks your agents handle, scaling smoothly is crucial.\n\n10.1.1 Horizontal Scaling: More Agents, More Tasks\nAs your projects get bigger, sometimes the easiest way to scale is by adding more agents. Instead of overloading a single agent with too many responsibilities, spread the tasks across multiple agents, each focused on a specific role.\n\nExample: In logistics, you might have one agent focused solely on real-time traffic data and another one managing warehouse inventories. These agents can then communicate and share data, keeping your workflow smooth and fast.\n\n\n\n10.1.2 Vertical Scaling: Supercharge Your Existing Agents\nIf you don’t want to add more agents, another approach is vertical scaling, where you beef up the existing agents by improving their performance and capabilities. You can use more powerful models or fine-tune advanced parameters to get more out of them.\n\nAdvanced Parameters: Adjust settings like temperature or max tokens to give your agents more control over the complexity and length of their responses. This is especially useful for agents that need to process more complex inputs or produce more detailed outputs.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Scaling and Maintenance: Keeping Your Agents Up-to-Date</span>"
+    ]
+  },
+  {
+    "objectID": "scaling.html#monitoring-agent-performance-over-time",
+    "href": "scaling.html#monitoring-agent-performance-over-time",
+    "title": "9  Scaling and Maintenance: Keeping Your Agents Up-to-Date",
+    "section": "10.2 Monitoring Agent Performance Over Time",
+    "text": "10.2 Monitoring Agent Performance Over Time\nYou can’t just set your agents loose and hope for the best—tracking how they perform over time is crucial. Without proper monitoring, your agents might slow down, lose efficiency, or make errors that go unnoticed until it’s too late.\n\n10.2.1 Performance Metrics: Keeping an Eye on Things\nSet up performance metrics to track how efficiently your agents are completing tasks. This includes tracking response times, task completion rates, and any errors that pop up.\n\nAgent Monitoring Tools: Use tools that allow you to keep tabs on how agents are handling their workload. If you notice a drop in performance, it might be time to adjust parameters or split tasks across more agents.\n\n\n\n10.2.2 Iterative Improvements\nEven after your agents are up and running, you’ll likely find areas where they can improve. Regularly check back on their system prompts and behavior. Little tweaks can make a big difference over time, especially as you introduce more complex tasks or additional data.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Scaling and Maintenance: Keeping Your Agents Up-to-Date</span>"
+    ]
+  },
+  {
+    "objectID": "scaling.html#regular-updates-and-maintenance-for-optimal-performance",
+    "href": "scaling.html#regular-updates-and-maintenance-for-optimal-performance",
+    "title": "9  Scaling and Maintenance: Keeping Your Agents Up-to-Date",
+    "section": "10.3 Regular Updates and Maintenance for Optimal Performance",
+    "text": "10.3 Regular Updates and Maintenance for Optimal Performance\nJust like any other part of your system, agents need regular upkeep. As new data becomes available or workflows evolve, your agents should reflect those changes. Keeping your agents updated ensures they stay relevant and accurate.\n\n10.3.1 Routine Maintenance: Keep It Fresh\n\nSystem Prompt Updates: The core instruction your agent follows (its system prompt) might need adjusting as your workflow changes. Make it a habit to check in on how your agents are interpreting data and responding to tasks, and tweak their prompts accordingly.\nRetraining Agents: If your agents rely on static data, such as traffic patterns from last year or old inventory reports, retrain them with fresh data. This will ensure they continue making smart, real-time decisions.\nError Handling: Set up a system for handling errors. If an agent fails or provides incorrect output, there should be fallback mechanisms to catch the issue and either resolve it or notify you.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Scaling and Maintenance: Keeping Your Agents Up-to-Date</span>"
+    ]
+  },
+  {
+    "objectID": "scaling.html#how-to-retire-outdated-agents",
+    "href": "scaling.html#how-to-retire-outdated-agents",
+    "title": "9  Scaling and Maintenance: Keeping Your Agents Up-to-Date",
+    "section": "10.4 How to Retire Outdated Agents",
+    "text": "10.4 How to Retire Outdated Agents\nAt some point, you’ll need to retire old agents that are no longer relevant to your workflow. This is just as important as keeping your current ones updated. Old agents that are no longer in use can clutter your system and make maintenance harder than it needs to be.\n\n10.4.1 Retiring Agents Gracefully\n\nArchive Agents: When an agent has served its purpose or when newer versions of the agent take over, archive it rather than leaving it active. This keeps your workspace organized and helps avoid confusion.\nRedirect Tasks: If you’re replacing an agent, ensure all tasks and workflows assigned to it are properly handed off to a new or updated agent. This avoids any gaps in your workflow.\nDocument the Process: Before deactivating an agent, document what it was used for and why it’s being retired. This documentation will be helpful if you ever need to revisit that workflow or build a similar agent in the future.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Scaling and Maintenance: Keeping Your Agents Up-to-Date</span>"
     ]
