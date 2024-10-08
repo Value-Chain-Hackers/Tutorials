@@ -22,21 +22,21 @@
   {
     "objectID": "interface.html",
     "href": "interface.html",
-    "title": "Preface",
+    "title": "2  Interface",
     "section": "",
     "text": "This is test\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
-      "Preface"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Interface</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "3  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
