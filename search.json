@@ -30,13 +30,23 @@
     ]
   },
   {
+    "objectID": "agents.html",
+    "href": "agents.html",
+    "title": "3  Crafting Your First Agent: Getting Started with Bots",
+    "section": "",
+    "text": "This is test\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Crafting Your First Agent: Getting Started with Bots</span>"
+    ]
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "3  Summary",
+    "title": "4  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
