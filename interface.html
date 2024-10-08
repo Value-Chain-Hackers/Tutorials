@@ -189,8 +189,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-left-panel-your-workspace-and-navigation-hub" id="toc-the-left-panel-your-workspace-and-navigation-hub" class="nav-link active" data-scroll-target="#the-left-panel-your-workspace-and-navigation-hub"><span class="header-section-number">2.0.1</span> The Left Panel: Your Workspace and Navigation Hub</a></li>
+  <li><a href="#the-right-panel-detailed-agent-controls" id="toc-the-right-panel-detailed-agent-controls" class="nav-link" data-scroll-target="#the-right-panel-detailed-agent-controls"><span class="header-section-number">2.0.2</span> The Right Panel: Detailed Agent Controls</a></li>
+  <li><a href="#the-center-the-command-line-of-interaction" id="toc-the-center-the-command-line-of-interaction" class="nav-link" data-scroll-target="#the-center-the-command-line-of-interaction"><span class="header-section-number">2.0.3</span> The Center: The Command Line of Interaction</a></li>
+  <li><a href="#pro-insights" id="toc-pro-insights" class="nav-link" data-scroll-target="#pro-insights"><span class="header-section-number">2.0.4</span> Pro Insights</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -214,17 +223,82 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Upon launching OpenWebUI, you are greeted by a user-friendly dashboard that lets you create and manage agents for various tasks, whether it’s for logistics or game development. Let’s walk through how to navigate this interface step by step, and I’ll show you how to create a simple agent for a logistics task as we go along.</p>
+<section id="the-left-panel-your-workspace-and-navigation-hub" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="the-left-panel-your-workspace-and-navigation-hub"><span class="header-section-number">2.0.1</span> The Left Panel: Your Workspace and Navigation Hub</h3>
+<p>The <strong>left panel</strong> is where you can manage all ongoing and past interactions with your agents. You’ll see options for: - <strong>Active agent sessions</strong>: These are the agents currently working on tasks or in active conversations with you. - <strong>Archived conversations</strong>: Here you can find a list of previous conversations or interactions you’ve had with your agents. - <strong>Agent templates</strong>: These pre-built configurations allow you to quickly create agents without starting from scratch.</p>
+<section id="example-navigating-the-left-panel" class="level4" data-number="2.0.1.1">
+<h4 data-number="2.0.1.1" class="anchored" data-anchor-id="example-navigating-the-left-panel"><span class="header-section-number">2.0.1.1</span> Example: Navigating the Left Panel</h4>
+<ol type="1">
+<li>On the <strong>left panel</strong>, click on <strong>“Active Sessions”</strong>. This will display a list of currently running agents and their statuses.</li>
+<li>Click on <strong>“Archived Conversations”</strong> if you want to review past interactions with an agent. This is useful for identifying where the agent might need tweaks or improvements.</li>
+<li>Explore the <strong>“Agent Templates”</strong> section by clicking on it. This provides you with pre-built agents for common tasks like <strong>“Logistics Optimizer”</strong> or <strong>“NPC Interaction”</strong>. For this example, we’ll start by selecting the <strong>“Logistics Optimizer”</strong> template to create an agent.</li>
+</ol>
+<p><strong>Try It Out</strong>: Click on <strong>“Logistics Optimizer”</strong> from the templates list and watch as it loads a pre-configured agent ready for route optimization tasks.</p>
+<hr>
+</section>
+</section>
+<section id="the-right-panel-detailed-agent-controls" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="the-right-panel-detailed-agent-controls"><span class="header-section-number">2.0.2</span> The Right Panel: Detailed Agent Controls</h3>
+<p>This is the <strong>control center</strong> for all agent creation and behavior adjustments. The right panel provides options to: - <strong>Create a new agent</strong>: You can start from scratch or use a template. - <strong>Configure agent roles</strong>: Assign roles to agents and customize their behavior based on your needs. - <strong>Behavior Adjustments</strong>: Fine-tune agent responses and set triggers to make their interactions more dynamic.</p>
+<section id="example-creating-and-configuring-an-agent" class="level4" data-number="2.0.2.1">
+<h4 data-number="2.0.2.1" class="anchored" data-anchor-id="example-creating-and-configuring-an-agent"><span class="header-section-number">2.0.2.1</span> Example: Creating and Configuring an Agent</h4>
+<p>Let’s create a simple agent to optimize delivery routes for a logistics company.</p>
+<ol type="1">
+<li><strong>Create New Agent</strong>:
 <ul>
-<li>Left Panel: Workspace Hub
-<ul>
-<li>Right Panel: Control Station</li>
-<li>Center Panel: Interaction Space</li>
-<li>Navigating the Interface</li>
-<li>Tips for getting comfortable with the layout</li>
+<li>Click on the <strong>“Create New Agent”</strong> button located at the top of the right panel.</li>
+<li>Name the agent as <code>UrbanRouteOptimizer_1</code>. This will handle deliveries in urban areas.</li>
+<li>Select <strong>“Logistics Optimizer”</strong> as the agent template. This template already includes basic settings for route optimization.</li>
 </ul></li>
-</ul>
+<li><strong>Agent Role Configuration</strong>:
+<ul>
+<li>Scroll down to the <strong>“Roles”</strong> section.</li>
+<li>In the dropdown, choose the <strong>“Route Planner”</strong> role.</li>
+<li>Set its primary task to <strong>“Optimize Delivery Routes”</strong>.</li>
+</ul></li>
+<li><strong>Behavior Adjustments</strong>:
+<ul>
+<li>Under the <strong>“Behavior”</strong> section, click on <strong>“Add New Rule”</strong>.</li>
+<li>Create a rule that reroutes deliveries if traffic is delayed by more than 20 minutes:
+<ul>
+<li>Rule Name: <code>TrafficDelayAdjustment</code></li>
+<li>Trigger: <strong>If traffic delay exceeds 20 minutes</strong>.</li>
+<li>Action: <strong>Recalculate optimal delivery route</strong>.</li>
+</ul></li>
+<li>Save the rule by clicking <strong>“Apply”</strong> at the bottom of the panel.</li>
+</ul></li>
+</ol>
+<p><strong>Try It Out</strong>: After setting up your agent, click <strong>“Run”</strong> at the top of the panel. Watch how the agent responds by generating optimized routes in real time. Simulate a traffic delay to see the agent adjust its route planning.</p>
+<hr>
+</section>
+</section>
+<section id="the-center-the-command-line-of-interaction" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="the-center-the-command-line-of-interaction"><span class="header-section-number">2.0.3</span> The Center: The Command Line of Interaction</h3>
+<p>The <strong>center panel</strong> is where you can communicate with your agents in real time. It displays: - <strong>Live interactions</strong>: You can issue commands and receive immediate feedback from your agent. - <strong>Task Overview</strong>: Monitor the agent’s progress on tasks, such as logistics route optimization or NPC dialogue management.</p>
+<section id="example-testing-agent-responses" class="level4" data-number="2.0.3.1">
+<h4 data-number="2.0.3.1" class="anchored" data-anchor-id="example-testing-agent-responses"><span class="header-section-number">2.0.3.1</span> Example: Testing Agent Responses</h4>
+<p>Once your agent is running, it’s time to interact with it:</p>
+<ol type="1">
+<li>In the <strong>center panel</strong>, click on the input field at the bottom and type:<br>
+<code>"Optimize all delivery routes for the next 24 hours"</code></li>
+<li>Press <strong>Enter</strong>. The agent will calculate the best possible routes based on current traffic data and package priority.</li>
+<li>Now, let’s test how it handles a disruption. Type:<br>
+<code>"Simulate a 30-minute traffic delay on Route A"</code></li>
+<li>Watch as the agent recalculates the delivery routes in response to the delay, prioritizing alternate routes to minimize downtime.</li>
+</ol>
+<p><strong>Try It Out</strong>: After the agent generates new routes, use the input field to ask for a summary:<br>
+<code>"Summarize changes made to the delivery routes"</code></p>
+<hr>
+</section>
+</section>
+<section id="pro-insights" class="level3" data-number="2.0.4">
+<h3 data-number="2.0.4" class="anchored" data-anchor-id="pro-insights"><span class="header-section-number">2.0.4</span> Pro Insights</h3>
+<p>Understanding the interface is one thing, but mastering it means knowing how to <strong>optimize your agents through iterative testing</strong>. For example, if your logistics agent is consistently choosing longer routes, adjust the <strong>behavior rules</strong> in the right panel to prioritize efficiency over package delivery speed. Then, immediately test the effect of your changes by issuing new commands in the center panel.</p>
+<p><strong>Pro Tip</strong>: Make small adjustments to your agent’s behavior, then use the center panel to simulate real-world scenarios (e.g., bad weather or road closures). This way, you can see how the agent adapts and continuously improve its performance.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
